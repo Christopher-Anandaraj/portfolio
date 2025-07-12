@@ -117,9 +117,9 @@ export default function Home() {
       <div className="w-full bg-[#23262b] py-30 mt-40" id="about-me-section">
         <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-25 px-8">
           {/* Left: Main About (centered, with extra top margin) */}
-          <div className="flex-1 min-w-[320px] max-w-4xl mx-auto mt-24">
-            <span className="font-bold text-white uppercase tracking-wider text-sm">/ About Me</span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-6 } leading-tight"> I’ve been developing LLM applications since 2023</h2>
+          <div className="flex-1 min-w-[320px] max-w-3xl mt-24">
+            <span className="font-bold text-blue-400 uppercase tracking-wider text-xl">/ About Me</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-6 leading-tight"> I’ve been developing LLM applications since 2023</h2>
             <p className="text-gray-300 text-lg mb-8 max-w-md leading-none">
               I build secure and scalable systems using large language models to solve real business problems across multiple domains.
             </p>
@@ -128,22 +128,24 @@ export default function Home() {
             </a>
           </div>
           {/* Right: Stats (with extra top margin) */}
-          <div className="flex-1 flex flex-col gap-8 min-w-[320px] max-w-2xl mt-24">
-            <div className="flex gap-16 items-center">
-              <div className="flex items-center gap-2">
-                <div className="text-6xl font-extrabold text-white leading-none">1</div>
-                <div className="font-bold text-white text-lg leading-tight">
-                  Year of<br />experience
+          <div className="flex-1 flex flex-col gap-4 min-w-[320px] max-w-3xl mt-40 items-start">
+            <div className="ml-2 w-full">
+              <div className="flex gap-16 items-center">
+                <div className="flex items-center gap-2">
+                  <div className="text-6xl font-extrabold text-white leading-none">1</div>
+                  <div className="font-bold text-white text-lg leading-tight">
+                    Year of<br />experience
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="text-6xl font-extrabold text-white leading-none">4</div>
+                  <div className="font-bold text-white text-lg leading-tight">
+                    AI related<br />projects
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="text-6xl font-extrabold text-white leading-none">4</div>
-                <div className="font-bold text-white text-lg leading-tight">
-                  AI related<br />projects
-                </div>
-              </div>
+              <p className="text-gray-400 text-base max-w-md mt-6">From building an aviation safety assistant for the UC Berkeley AI Hackathon to leading development on enterprise chatbots that integrate SQL and MongoDB-backed knowledge, I thrive at the intersection of innovation, performance, and usability.</p>
             </div>
-            <p className="text-gray-400 text-base max-w-md">From building an aviation safety assistant for the UC Berkeley AI Hackathon to leading development on enterprise chatbots that integrate SQL and MongoDB-backed knowledge, I thrive at the intersection of innovation, performance, and usability.</p>
           </div>
         </section>
         <div className="max-w-7xl mx-auto mt-20 px-8">
