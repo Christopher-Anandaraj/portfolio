@@ -149,7 +149,7 @@ export default function About() {
             <div>
               <span className="text-blue-400 font-bold uppercase text-2xl mb-2 block">/ My Experience</span>
               <div className="max-w-2xl">
-                <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-2">I've worked with some amazing companies and institutions</h2>
+                <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-2">I&apos;ve worked with some amazing companies and institutions</h2>
               </div>
             </div>
             <div className="mt-6 md:mt-0">
