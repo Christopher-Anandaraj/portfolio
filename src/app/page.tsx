@@ -22,6 +22,7 @@ const socialLinks = [
 
 const companies = [
   { name: 'MostEdge', icon: <Image src="/mostedge_logo.jpg" alt="MostEdge Logo" width={28} height={28} style={{ height: 28, width: 'auto', display: 'inline-block', verticalAlign: 'middle', borderRadius: '4px' }} /> },
+  { name: 'Georgia Tech', icon: <Image src="/gt_logo.jpg" alt="Georgia Tech Logo" width={28} height={28} style={{ height: 28, width: 'auto', display: 'inline-block', verticalAlign: 'middle', borderRadius: '4px' }} /> },
 ];
 
 export default function Home() {
@@ -144,7 +145,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-400 text-base max-w-md mt-6">From building an aviation safety assistant for the UC Berkeley AI Hackathon to leading development on enterprise chatbots that integrate SQL and MongoDB-backed knowledge, I thrive at the intersection of innovation, performance, and usability.</p>
+              <p className="text-gray-400 text-base max-w-md mt-6">From building an aviation safety assistant for the UC Berkeley AI Hackathon to leading development on enterprise RAG chatbots that integrate SQL and MongoDB-backed knowledge, I thrive at the intersection of innovation, performance, and usability.</p>
             </div>
           </div>
         </section>
