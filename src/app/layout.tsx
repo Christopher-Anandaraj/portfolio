@@ -6,6 +6,16 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: "Chris' Portfolio",
   description: "Explore Chris' work in AI development, LLM applications, and intelligent systems engineering.",
+  openGraph: {
+    images: [
+      {
+        url: '/pic.png', // Path to your image in the public folder
+        width: 1200,     // Recommended width
+        height: 630,     // Recommended height
+        alt: "Chris' Portfolio Preview"
+      }
+    ]
+  },
 };
 
 export default function RootLayout({
