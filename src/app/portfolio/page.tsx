@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const projects = [
   {
@@ -34,7 +35,13 @@ export default function Portfolio() {
           <div key={idx} className="bg-[#23262b] border border-[#2d2f36] rounded-2xl p-0 flex flex-col min-h-[400px] w-full shadow-2xl overflow-hidden">
             {/* Image section */}
             <div style={{height: '280px', width: '100%'}}>
-              <img src={project.image} alt={project.title} className="object-cover w-full h-full" />
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={560}
+                height={280}
+                className="object-cover w-full h-full"
+              />
             </div>
             {/* Content section */}
             <div className="flex flex-col gap-6 p-10 flex-1">

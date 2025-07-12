@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "AI Developer Portfolio",
@@ -22,9 +23,9 @@ export default function RootLayout({
           </div>
           {/* Nav */}
           <nav className="flex items-center gap-8 text-xl font-medium">
-            <a href="/" className="hover:text-blue-400 transition-colors">Home</a>
-            <a href="/about" className="hover:text-blue-400 transition-colors">About</a>
-            <a href="/portfolio" className="hover:text-blue-400 transition-colors">Projects</a>
+            <Link href="/" className="hover:text-blue-400 transition-colors">Home</Link>
+            <Link href="/about" className="hover:text-blue-400 transition-colors">About</Link>
+            <Link href="/portfolio" className="hover:text-blue-400 transition-colors">Projects</Link>
           </nav>
         </header>
         <main className="w-full flex flex-col items-center justify-center flex-1">

@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import Image from 'next/image';
 
 const socialLinks = [
   {
@@ -20,7 +21,7 @@ const socialLinks = [
 ];
 
 const companies = [
-  { name: 'MostEdge', icon: <img src="/mostedge_logo.jpg" alt="MostEdge Logo" style={{ height: 28, width: 'auto', display: 'inline-block', verticalAlign: 'middle', borderRadius: '4px' }} /> },
+  { name: 'MostEdge', icon: <Image src="/mostedge_logo.jpg" alt="MostEdge Logo" width={28} height={28} style={{ height: 28, width: 'auto', display: 'inline-block', verticalAlign: 'middle', borderRadius: '4px' }} /> },
 ];
 
 export default function Home() {
@@ -38,9 +39,11 @@ export default function Home() {
         {/* Background Image */}
         <div className="hidden lg:block absolute top-[126px] left-[20%] h-full w-[60%] z-0">
           <div className="relative h-full w-full">
-            <img
+            <Image
               src="/profile-bg.png"
               alt="Profile Background"
+              width={400}
+              height={400}
               className="object-contain object-top object-right h-full w-full opacity-90 select-none pointer-events-none"
               style={{ filter: 'drop-shadow(0 0 12px #181A1B)' }}
             />

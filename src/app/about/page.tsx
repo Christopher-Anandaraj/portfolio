@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -30,9 +31,11 @@ export default function About() {
       {/* Right: Profile Image */}
       <div className="flex-1 flex items-center justify-center mt-12 lg:mt-0">
         <div className="w-120 h-120 rounded-full bg-[#23262b] flex items-center justify-center shadow-2xl border-4 border-[#23262b]">
-          <img
+          <Image
             src="/profile-bg.png"
             alt="Profile"
+            width={480}
+            height={480}
             className="rounded-full object-contain w-120 h-120"
           />
         </div>
