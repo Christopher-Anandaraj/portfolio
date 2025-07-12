@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "Chris' Developer Portfolio",
+  title: "Chris' Portfolio",
   description: "Explore Chris' work in AI development, LLM applications, and intelligent systems engineering.",
 };
 
@@ -15,6 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/browser_pic.ico" type="image/x-icon" />
+      </head>
       <body className="antialiased text-white min-h-screen" style={{ fontFamily: 'Space Grotesk, sans-serif', backgroundColor: '#1B1E22' }}>
         <header className="w-full flex items-center justify-between py-6 mt-6 px-8 max-w-7xl mx-auto">
           {/* Logo */}
