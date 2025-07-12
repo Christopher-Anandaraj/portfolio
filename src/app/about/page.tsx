@@ -4,9 +4,9 @@ import Image from 'next/image';
 export default function About() {
   return (
     <>
-      <section className="min-h-[80vh] flex flex-col lg:flex-row items-center justify-center px-8 py-20">
+      <section className="min-h-[80vh] flex flex-col lg:flex-row items-center justify-center px-4 sm:px-8 py-10 sm:py-20">
         {/* Left: Text */}
-        <div className="flex-1 flex flex-col items-start justify-center max-w-4xl">
+        <div className="flex-1 flex flex-col items-start justify-center max-w-4xl w-full">
           <div className="w-16 h-1 bg-white rounded mb-8" />
           <h1 className="text-5xl sm:text-6xl font-extrabold text-white mb-6 text-left">
             Nice to meet you,<br />I’m Christopher Anandaraj
@@ -30,21 +30,21 @@ export default function About() {
           </div>
         </div>
         {/* Right: Profile Image */}
-        <div className="flex-1 flex items-center justify-center mt-12 lg:mt-0">
-          <div className="w-120 h-120 rounded-full bg-[#23262b] flex items-center justify-center shadow-2xl border-4 border-[#23262b]">
+        <div className="flex-1 flex items-center justify-center mt-8 sm:mt-12 lg:mt-0 w-full">
+          <div className="w-40 h-40 sm:w-60 sm:h-60 lg:w-120 lg:h-120 rounded-full bg-[#23262b] flex items-center justify-center shadow-2xl border-4 border-[#23262b]">
             <Image
               src="/profile-bg.png"
               alt="Profile"
-              width={480}
-              height={480}
-              className="rounded-full object-contain w-120 h-120"
+              width={240}
+              height={240}
+              className="rounded-full object-contain w-40 h-40 sm:w-60 sm:h-60 lg:w-120 lg:h-120"
             />
           </div>
         </div>
       </section>
       {/* Story Section */}
-      <section className="w-full bg-[#23262b] py-20 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <section className="w-full bg-[#23262b] py-10 sm:py-20 px-2 sm:px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
           {/* Card 1: Image */}
           <div className="rounded-2xl overflow-hidden">
             <Image
@@ -80,9 +80,9 @@ export default function About() {
         </div>
       </section>
       {/* Experience Section */}
-      <section className="w-full py-50 px-4">
+      <section className="w-full py-16 sm:py-50 px-2 sm:px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 sm:mb-8">
             <div>
               <span className="text-blue-400 font-bold uppercase text-2xl mb-2 block">/ My Experience</span>
               <div className="max-w-2xl">
@@ -94,7 +94,7 @@ export default function About() {
             </div>
           </div>
           <hr className="border-gray-700 mb-8" />
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 gap-6 sm:gap-8">
             {/* Skill Set */}
             <div>
               <span className="text-gray-400 font-bold uppercase text-lg mb-2 block">Languages</span>
@@ -143,9 +143,9 @@ export default function About() {
         </div>
       </section>
       {/* Experience Timeline Section */}
-      <section className="w-full py-30 px-4">
+      <section className="w-full py-10 sm:py-30 px-2 sm:px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 sm:mb-8">
             <div>
               <span className="text-blue-400 font-bold uppercase text-2xl mb-2 block">/ My Experience</span>
               <div className="max-w-2xl">
@@ -157,9 +157,9 @@ export default function About() {
             </div>
           </div>
           <hr className="border-gray-700 mb-8" />
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6 sm:gap-12">
             {/* Experience Card 1 */}
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
               <div className="flex items-center gap-6 min-w-[220px]">
                 {/* Placeholder SVG for Venture */}
                 <span className="text-gray-300">
@@ -175,7 +175,7 @@ export default function About() {
             </div>
             <hr className="border-gray-700" />
             {/* Experience Card 2 */}
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
               <div className="flex items-center gap-6 min-w-[220px]">
                 {/* Placeholder SVG for Agency */}
                 <span className="text-gray-300">
@@ -195,7 +195,7 @@ export default function About() {
         </div>
       </section>
       {/* Education Section */}
-      <section className="w-full bg-[#23262b] py-50 px-4">
+      <section className="w-full bg-[#23262b] py-16 sm:py-50 px-2 sm:px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
             <div>

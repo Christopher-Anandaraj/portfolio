@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative max-w-7xl mx-auto w-full px-8 flex flex-col lg:flex-row items-center justify-center min-h-[80vh] gap-12 lg:gap-0" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+      <section className="relative max-w-7xl mx-auto w-full px-4 sm:px-8 flex flex-col lg:flex-row items-center justify-center min-h-[80vh] gap-8 lg:gap-0" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         {/* Background Image */}
         <div className="hidden lg:block absolute top-[126px] left-[20%] h-full w-[60%] z-0">
           <div className="relative h-full w-full">
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         {/* Left: Hero Text */}
-        <div className="flex-1 flex flex-col justify-center items-start gap-6 pt-8 lg:pt-0 z-10 lg:-ml-20">
+        <div className="flex-1 flex flex-col justify-center items-start gap-4 sm:gap-6 pt-4 sm:pt-8 lg:pt-0 z-10 lg:-ml-20 w-full">
           <div className="w-12 h-1 bg-white mb-2 rounded" />
           <h1 className="text-5xl sm:text-7xl font-bold leading-tight text-white">
             I’m Chris, an <br /> AI Developer
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </div>
         {/* Right: About Me & My Work Cards, Follow Me */}
-        <div className="flex-1 flex flex-col justify-center items-start gap-10 w-full max-w-xs ml-auto z-10" style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 18, fontWeight: 400, lineHeight: '1.667em' }}>
+        <div className="flex-1 flex flex-col justify-center items-start gap-6 sm:gap-10 w-full max-w-xs ml-0 sm:ml-auto z-10" style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 18, fontWeight: 400, lineHeight: '1.667em' }}>
           <div className="w-full flex flex-col gap-8">
             {/* About Me */}
             <div>
@@ -115,10 +115,10 @@ export default function Home() {
       </section>
 
       {/* About Me Section */}
-      <div className="w-full bg-[#23262b] py-30 mt-40" id="about-me-section">
-        <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-25 px-8">
+      <div className="w-full bg-[#23262b] py-16 sm:py-30 mt-16 sm:mt-40" id="about-me-section">
+        <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-8 lg:gap-25 px-4 sm:px-8">
           {/* Left: Main About (centered, with extra top margin) */}
-          <div className="flex-1 min-w-[320px] max-w-3xl mt-24">
+          <div className="flex-1 min-w-0 max-w-3xl mt-8 sm:mt-24 w-full">
             <span className="font-bold text-blue-400 uppercase tracking-wider text-xl">/ About Me</span>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-6 leading-tight"> I’ve been developing LLM applications since 2023</h2>
             <p className="text-gray-300 text-lg mb-8 max-w-md leading-none">
@@ -129,9 +129,9 @@ export default function Home() {
             </a>
           </div>
           {/* Right: Stats (with extra top margin) */}
-          <div className="flex-1 flex flex-col gap-4 min-w-[320px] max-w-3xl mt-40 items-start">
+          <div className="flex-1 flex flex-col gap-4 min-w-0 max-w-3xl mt-8 sm:mt-40 items-start w-full">
             <div className="ml-2 w-full">
-              <div className="flex gap-16 items-center">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-16 items-start sm:items-center w-full">
                 <div className="flex items-center gap-2">
                   <div className="text-6xl font-extrabold text-white leading-none">1</div>
                   <div className="font-bold text-white text-lg leading-tight">
@@ -149,9 +149,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="max-w-7xl mx-auto mt-20 px-8">
+        <div className="max-w-7xl mx-auto mt-10 sm:mt-20 px-4 sm:px-8">
           <hr className="border-gray-700 mb-8" />
-          <div className="flex flex-col sm:flex-row items-center gap-8 justify-center">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center">
             <span className="text-gray-400 font-semibold uppercase tracking-wider text-sm">Previously worked at</span>
             <div className="flex gap-10 flex-wrap items-center mt-4 sm:mt-0">
               {companies.map((c) => (
