@@ -64,7 +64,7 @@ export default function About() {
           {/* Card 3: Text */}
           <div className="flex flex-col justify-center bg-[#23262b] rounded-2xl p-12 min-h-[400px]">
             <span className="text-blue-400 font-bold uppercase text-2xl mb-2">/ My Story</span>
-            <h2 className="text-4xl font-bold text-white mb-4">My first website design back in 2001</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">My first AI related work</h2>
             <p className="text-gray-400 text-xl">In 2023, I developed an object detection system that identified and measured bruises on fruits using Detectron2. The goal was to automate quality control and reduce produce waste through more accurate damage assessment. I trained the model on custom-labeled data and fine-tuned it for precision across different fruit types. That project laid the foundation for my interest in AI and its potential to solve practical, real-world problems.</p>
           </div>
           {/* Card 4: Image */}

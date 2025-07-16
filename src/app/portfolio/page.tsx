@@ -18,7 +18,7 @@ const projects = [
     hosted: true,
     description:
       "InvAI is an AI-powered dashboard for tracking and optimizing personal investments. It connects to live portfolio data via Robinhood and uses Yahoo Finance for market history. A Gemini-powered assistant provides trend analysis, asset suggestions, and personalized insights. The platform features a modern UI with dynamic charts and performance summaries to guide financial decisions.",
-    link: "#",
+    link: "https://invai.chrisbuilds.dev/",
   },
 ];
 
